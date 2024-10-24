@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import {
 	decrement,
+	getCount,
 	increment,
 	incrementByAmount,
 	reset,
@@ -9,7 +10,7 @@ import { useState } from "react";
 import { Box, Input } from "@chakra-ui/react";
 
 const Counter = () => {
-	const count = useSelector((state: any) => state.counter.count);
+	const count = useSelector(getCount);
 	const dispatch = useDispatch();
 	const [incrementValue, setIncrementValue] = useState(0);
 
