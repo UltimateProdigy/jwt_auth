@@ -11,10 +11,10 @@ import axios from "../api/axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthProvider";
-const LOGIN_URL = "/auth/login";
 import { useLocation } from "react-router-dom";
 
 export default function Login() {
+	const LOGIN_URL = "/auth/login";
 	const navigate = useNavigate();
 	const { setAuth } = useAuth();
 	const location = useLocation();
