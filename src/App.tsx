@@ -6,7 +6,7 @@ import Admin from "./pages/admin";
 import Layout from "./components/Layout";
 import Editor from "./pages/editor";
 import Lounge from "./pages/lounge";
-import Missing from "./pages/missing";
+import { Missing } from "./pages/missing";
 import RequireAuth from "./components/RequireAuth";
 
 function App() {

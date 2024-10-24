@@ -10,7 +10,7 @@ import {
 import axios from "../api/axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
+import { useAuth } from "../context/AuthProvider";
 const LOGIN_URL = "/auth/login";
 import { useLocation } from "react-router-dom";
 
